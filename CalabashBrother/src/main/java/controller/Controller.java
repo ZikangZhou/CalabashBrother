@@ -12,6 +12,8 @@ import model.Formation;
 import model.Model;
 import view.View;
 
+import java.util.Random;
+
 public class Controller {
 
     public KeyEventHandler keyEventHandler;
@@ -19,6 +21,7 @@ public class Controller {
     private Model model;
     private View view;
     private boolean isSet = false;
+    private Random random = new Random();
 
     public Controller(Model model, View view) {
         this.model = model;
@@ -56,6 +59,7 @@ public class Controller {
                         alert.setHeaderText(null);
                         alert.setContentText("葫芦娃胜利!");
                         alert.showAndWait();
+                        view.ballView.setVisible(false);
                         view.vBox.setVisible(true);
                         model.clear();
                         isSet = false;
@@ -136,8 +140,21 @@ public class Controller {
                             int destX = creature.getCell().getCoordinate().getCoordinateX();
                             int destY = creature.getCell().getCoordinate().getCoordinateY();
                             if (sourceX == destX && sourceY == destY) {
-                                Model.getCalabashLeader().notify();
-                                model.setCalabashLeader((CalabashBrother) creature);
+                                if (random.nextInt(8) != 5) {
+                                    Model.getCalabashLeader().notify();
+                                    model.setCalabashLeader((CalabashBrother) creature);
+                                }
+                                else {
+                                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                                    alert.setTitle(null);
+                                    alert.setHeaderText(null);
+                                    alert.setContentText("传球失败，老爷爷直接死掉！");
+                                    alert.showAndWait();
+                                    view.ballView.setVisible(false);
+                                    view.vBox.setVisible(true);
+                                    model.clear();
+                                    isSet = false;
+                                }
                                 break;
                             }
                         }

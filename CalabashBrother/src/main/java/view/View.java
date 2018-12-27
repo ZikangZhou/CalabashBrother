@@ -80,7 +80,7 @@ public class View extends Stage {
                         new KeyValue(ballView.yProperty(),
                                 Model.getCalabashLeader().getCell().getCoordinate().getCoordinateY() * scaleY - 10)));
             } else {
-                timeline.getKeyFrames().add(new KeyFrame(Duration.millis(100), new KeyValue(ballView.xProperty(),
+                timeline.getKeyFrames().add(new KeyFrame(Duration.millis(50), new KeyValue(ballView.xProperty(),
                         Model.getCalabashLeader().getCell().getCoordinate().getCoordinateX() * scaleX - 10),
                         new KeyValue(ballView.yProperty(),
                                 Model.getCalabashLeader().getCell().getCoordinate().getCoordinateY() * scaleY - 10)));
@@ -90,8 +90,6 @@ public class View extends Stage {
         for (Creature creature : Model.getCreatures()) {
             Cell cell = creature.getCell();
             if (cell != null) {
-                //graphicsContext.drawImage(new Image("SNAKE.png"), creature.getCell().getCoordinate().getCoordinateX() * scaleX,
-                        //creature.getCell().getCoordinate().getCoordinateY() * scaleY, creatureWidth, creatureHeight);
                 graphicsContext.drawImage(creature.getImage(), creature.getCell().getCoordinate().getCoordinateX() * scaleX,
                         creature.getCell().getCoordinate().getCoordinateY() * scaleY, creatureWidth, creatureHeight);
             }
