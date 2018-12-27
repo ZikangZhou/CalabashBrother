@@ -67,6 +67,7 @@ public class View extends Stage {
     }
 
     public void update() {
+        graphicsContext.clearRect(0, 0, canvas.getWidth(), canvas.getHeight());
         graphicsContext.drawImage(new Image("background.png"), 0, 0, canvas.getWidth(), canvas.getHeight());
         if (Model.getCalabashLeader().getCell() != null && ((int)ballView.getX() !=
                 Model.getCalabashLeader().getCell().getCoordinate().getCoordinateX() * scaleX - 10 ||
@@ -89,6 +90,8 @@ public class View extends Stage {
         for (Creature creature : Model.getCreatures()) {
             Cell cell = creature.getCell();
             if (cell != null) {
+                //graphicsContext.drawImage(new Image("SNAKE.png"), creature.getCell().getCoordinate().getCoordinateX() * scaleX,
+                        //creature.getCell().getCoordinate().getCoordinateY() * scaleY, creatureWidth, creatureHeight);
                 graphicsContext.drawImage(creature.getImage(), creature.getCell().getCoordinate().getCoordinateX() * scaleX,
                         creature.getCell().getCoordinate().getCoordinateY() * scaleY, creatureWidth, creatureHeight);
             }

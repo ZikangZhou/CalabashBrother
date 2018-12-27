@@ -1,3 +1,5 @@
+package main;
+
 import controller.Controller;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
@@ -5,7 +7,6 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import model.Model;
 import view.View;
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

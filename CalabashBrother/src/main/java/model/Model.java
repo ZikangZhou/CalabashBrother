@@ -47,6 +47,7 @@ public class Model implements Runnable {
         creatures.addAll(nonCalabashSoldier);
         creatures.add(nonCalabashSupporter);
 
+        new Thread(calabashLeader).start();
         for (Creature creature : calabashSoldier) {
             new Thread(creature).start();
         }
