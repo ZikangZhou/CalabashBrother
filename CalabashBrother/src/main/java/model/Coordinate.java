@@ -81,6 +81,15 @@ public class Coordinate {
     }
 
     @Override
+    public int hashCode() {
+        final int prime = 37;
+        int result = 17;
+        result = prime * result + coordinateX;
+        result = prime * result + coordinateY;
+        return result;
+    }
+
+    @Override
     public String toString() {
         return "x:" + coordinateX + ",y:" + coordinateY;
     }

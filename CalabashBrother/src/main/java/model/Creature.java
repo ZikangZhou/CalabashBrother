@@ -13,6 +13,8 @@ enum NonCalabashBrother implements Creature {
         @Override
         public void run() {
             while (true) {
+                if (Model.isReplay || Model.end())
+                    return;
                 boolean flag = random.nextBoolean();
                 try {
                     TimeUnit.MILLISECONDS.sleep(300);
@@ -32,6 +34,8 @@ enum NonCalabashBrother implements Creature {
         @Override
         public void run() {
             while (true) {
+                if (Model.isReplay || Model.end())
+                    return;
                 try {
                     TimeUnit.MILLISECONDS.sleep(300);
                     moveTowards(GRANDPA);
@@ -46,6 +50,8 @@ enum NonCalabashBrother implements Creature {
         @Override
         public void run() {
             while (true) {
+                if (Model.isReplay || Model.end())
+                    return;
                 synchronized (Model.getCalabashLeader()) {
                     try {
                         moveTowards(Model.getCalabashLeader());
@@ -211,96 +217,14 @@ interface Calabash extends Creature {
     Color getColor();
 }
 
-class Property {
 
-    private String name;
-    private Image image;
-    private Cell cell;
-
-    Property(String name, Image image) {
-        this.name = name;
-        this.image = image;
-        this.cell = null;
-    }
-
-    String getName() {
-        return name;
-    }
-
-    Image getImage() {
-        return image;
-    }
-
-    Cell getCell() {
-        return cell;
-    }
-
-    void setCell(Coordinate coordinate) throws Exception {
-        Cell oldCell = cell;
-        try {
-            cell = CellPool.getInstance().borrowObject(coordinate, 16);
-            if (oldCell != null)
-                CellPool.getInstance().returnObject(oldCell.getCoordinate(), oldCell);
-        } catch (Exception e) {
-            cell = oldCell;
-            throw e;
-        }
-    }
-
-    void removeCell() {
-        if (cell != null) {
-            CellPool.getInstance().returnObject(cell.getCoordinate(), cell);
-            cell = null;
-        }
-    }
-
-    void moveUp() throws Exception {
-        Coordinate target = cell.getCoordinate().add(0, -1);
-        setCell(Model.coordinates[target.getCoordinateX()][target.getCoordinateY()]);
-    }
-
-    void moveDown() throws Exception {
-        Coordinate target = cell.getCoordinate().add(0, 1);
-        setCell(Model.coordinates[target.getCoordinateX()][target.getCoordinateY()]);
-    }
-
-    void moveLeft() throws Exception {
-        Coordinate target = cell.getCoordinate().add(-1, 0);
-        setCell(Model.coordinates[target.getCoordinateX()][target.getCoordinateY()]);
-    }
-
-    void moveRight() throws Exception {
-        Coordinate target = cell.getCoordinate().add(1, 0);
-        setCell(Model.coordinates[target.getCoordinateX()][target.getCoordinateY()]);
-    }
-}
-
-class CalabashProperty extends Property {
-
-    private Color color;
-    private Rank rank;
-
-    CalabashProperty(Image image, Color color, Rank rank) {
-        super(color.toString().charAt(0) + "娃", image);
-        this.color = color;
-        this.rank = rank;
-    }
-
-    Rank getRank() {
-        return rank;
-    }
-
-    Color getColor() {
-        return color;
-    }
-}
 
 class Underlying implements Creature {
 
     private Property property;
 
-    Underlying() {
-        property = new Property("小喽啰", new Image("UNDERLYING.png"));
+    Underlying(String name) {
+        property = new Property(name, new Image("UNDERLYING.png"));
     }
 
     public String getName() {
@@ -331,6 +255,8 @@ class Underlying implements Creature {
     @Override
     public void run() {
         while (true) {
+            if (Model.isReplay)
+                return;
             try {
                 TimeUnit.MILLISECONDS.sleep(500);
                 int index = Model.getNonCalabashSoldier().indexOf(this);

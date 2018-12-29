@@ -44,12 +44,12 @@ public class View extends Stage {
         buttons.add(new Button("鹤翼阵"));
         buttons.add(new Button("雁行阵"));
         buttons.add(new Button("衡轭阵"));
-        buttons.add(new Button("长蛇阵"));
         buttons.add(new Button("鱼鳞阵"));
         buttons.add(new Button("方円阵"));
         buttons.add(new Button("偃月阵"));
         buttons.add(new Button("锋矢阵"));
         buttons.add(new Button("开始游戏"));
+        buttons.add(new Button("精彩回放"));
         for (Button button : buttons) {
             button.setPrefWidth(110);
             button.setPrefHeight(69);

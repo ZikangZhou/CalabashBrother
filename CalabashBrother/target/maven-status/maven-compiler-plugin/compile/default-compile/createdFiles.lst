@@ -1,5 +1,7 @@
 model/Formation$6.class
+io/RecordReader.class
 model/CalabashBrother.class
+io/RecordWriter.class
 model/cell/CellPool.class
 model/cell/Cell.class
 model/Formation$3.class

@@ -57,6 +57,8 @@ public enum CalabashBrother implements Calabash {
     @Override
     public void run() {
         while (true) {
+            if (Model.isReplay || Model.end())
+                return;
             if (Model.getCalabashSoldier().indexOf(this) != -1) {
                 int flag = random.nextInt(4);
                 if (getCell() != null) {

@@ -2,18 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2316133b-1c71-41d5-8056-f12272f95c2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ShortestPathTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/RecordReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/RecordWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Property.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/CalabashBrother.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/CalabashBrother.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Coordinate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Creature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/cell/CellPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/cell/CellPool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/CalabashBrother.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/CalabashBrother.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Controller$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/Controller$KeyEventHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Controller$KeyEventHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/Controller$MouseEventHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Controller$MouseEventHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/CalabashBrother.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/CalabashBrother.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/CalabashProperty.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/CalabashProperty.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Color.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Color.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Coordinate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Coordinate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Creature.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Creature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Model.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/NonCalabashBrother$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/NonCalabashBrother$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/NonCalabashBrother$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/NonCalabashBrother$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/NonCalabashBrother$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/NonCalabashBrother$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/NonCalabashBrother.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/NonCalabashBrother.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Property.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Property.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Rank.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Rank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Underlying.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Underlying.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/cell/CellPool$CellPoolHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/cell/CellPool$CellPoolHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/cell/CellPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/cell/CellPool.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/view/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ShortestPathTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ShortestPathTest.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -98,29 +122,50 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="0" value="1" />
-          <entry key="java" value="17" />
+          <entry key="CalabashBrother" value="1" />
+          <entry key="CalabashCamp" value="1" />
+          <entry key="CalabashProperty" value="1" />
+          <entry key="Camp" value="1" />
+          <entry key="CampProperty" value="1" />
+          <entry key="Controller" value="1" />
+          <entry key="Creature" value="1" />
+          <entry key="JAVA/" value="2" />
+          <entry key="JAVA/algorithm" value="1" />
+          <entry key="JAVA/controller" value="1" />
+          <entry key="JAVA/model" value="1" />
+          <entry key="JAVA/view" value="1" />
+          <entry key="NonCalabashBrother" value="1" />
+          <entry key="NonCalabashCamp" value="1" />
+          <entry key="Property" value="1" />
+          <entry key="View" value="1" />
+          <entry key="cell" value="1" />
+          <entry key="java" value="72" />
+          <entry key="json" value="2" />
           <entry key="png" value="1" />
-          <entry key="xml" value="3" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="17" />
-          <entry key="UML" value="1" />
-          <entry key="XML" value="3" />
+          <entry key="JAVA" value="72" />
+          <entry key="JSON" value="2" />
+          <entry key="UML" value="19" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="422" />
-          <entry key="xml" value="380" />
+          <entry key="java" value="3161" />
+          <entry key="json" value="12" />
+          <entry key="xml" value="384" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="422" />
-          <entry key="XML" value="380" />
+          <entry key="JAVA" value="3161" />
+          <entry key="JSON" value="12" />
+          <entry key="XML" value="384" />
         </counts>
       </usages-collector>
     </session>
@@ -128,29 +173,33 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/CalabashBrother.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/Creature.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-429">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="-1203">
+              <caret line="160" column="17" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2244#2245#0" expanded="true" />
+                <element signature="e#2285#2286#0" expanded="true" />
+                <element signature="e#2569#2570#0" expanded="true" />
+                <element signature="e#2606#2607#0" expanded="true" />
+                <element signature="class#Color#0" />
+                <element signature="class#Rank#0" />
+                <element signature="e#5898#5899#0" expanded="true" />
+                <element signature="e#5935#5936#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Creature.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/Coordinate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2850">
-              <caret line="206" column="10" selection-start-line="206" selection-start-column="10" selection-end-line="206" selection-end-column="10" />
+            <state relative-caret-position="217">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3384#3385#0" expanded="true" />
-                <element signature="e#3411#3412#0" expanded="true" />
-                <element signature="e#5296#5297#0" expanded="true" />
-                <element signature="e#5323#5324#0" expanded="true" />
-                <element signature="e#5397#5398#0" expanded="true" />
-                <element signature="e#5424#5425#0" expanded="true" />
-                <element signature="e#7049#7050#0" expanded="true" />
-                <element signature="e#7076#7077#0" expanded="true" />
+                <element signature="e#2517#2518#0" expanded="true" />
+                <element signature="e#2580#2581#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,77 +208,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+            <state relative-caret-position="2400">
+              <caret line="172" column="26" selection-start-line="172" selection-start-column="26" selection-end-line="172" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2412#2413#0" expanded="true" />
-                <element signature="e#2450#2451#0" expanded="true" />
-                <element signature="e#2510#2511#0" expanded="true" />
-                <element signature="e#2551#2552#0" expanded="true" />
-                <element signature="e#5535#5536#0" expanded="true" />
-                <element signature="e#5596#5597#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/View.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="82" column="75" selection-start-line="82" selection-start-column="75" selection-end-line="82" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2760#2761#0" expanded="true" />
+                <element signature="e#2797#2798#0" expanded="true" />
+                <element signature="e#2861#2862#0" expanded="true" />
+                <element signature="e#2899#2900#0" expanded="true" />
+                <element signature="e#2959#2960#0" expanded="true" />
+                <element signature="e#3000#3001#0" expanded="true" />
+                <element signature="method#setCalabashLeader#0;class#Model#0" />
+                <element signature="e#3432#3433#0" expanded="true" />
+                <element signature="e#3472#3473#0" expanded="true" />
+                <element signature="e#3523#3524#0" expanded="true" />
+                <element signature="e#3555#3556#0" expanded="true" />
+                <element signature="method#setNonCalabashCamp#0;class#Model#0" />
+                <element signature="e#6597#6598#0" expanded="true" />
+                <element signature="e#6658#6659#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Controller.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/record.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="61" column="54" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/cell/CellPool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="36" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/ShortestPath.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ShortestPathTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-62602">
+              <caret line="141" column="5" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -237,12 +243,74 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="188">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#727#869#0" expanded="true" />
-                <element signature="e#868#869#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/RecordWriter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/RecordReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="16" column="68" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/Property.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="825">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#609#610#0" expanded="true" />
+                <element signature="e#633#634#0" expanded="true" />
+                <element signature="e#661#662#0" expanded="true" />
+                <element signature="e#690#691#0" expanded="true" />
+                <element signature="e#717#718#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1736">
+              <caret line="147" column="28" selection-start-line="147" selection-start-column="28" selection-end-line="147" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/CalabashBrother.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1360">
+              <caret line="121" selection-start-line="121" selection-end-line="121" />
+              <folding>
+                <element signature="e#4876#4877#0" expanded="true" />
+                <element signature="e#4913#4914#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -257,6 +325,18 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>borr</find>
+      <find>cell for creature at</find>
+      <find>start</find>
+      <find>borrow</find>
+      <find>run</find>
+      <find>&quot;record.json&quot;</find>
+      <find>setCell</find>
+      <find>new Thread</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -265,22 +345,27 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Algorithm/ShortestPath.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Camp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Coordinate.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Formation.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/cell/Cell.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/cell/CellFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Creature.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/CalabashBrother.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/cell/CellPoolConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/cell/CellPool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Model.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/algorithm/ShortestPath.java" />
         <option value="$PROJECT_DIR$/src/test/java/ShortestPathTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/ShortestPath.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/cell/CellPool.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/IOTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/View.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/RecordReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/CalabashBrother.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Creature.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Property.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/RecordWriter.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Coordinate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Model.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/record.json" />
       </list>
     </option>
   </component>
@@ -318,10 +403,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="730" />
-    <option name="width" value="710" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="814" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -353,31 +438,7 @@
               <item name="CalabashBrother" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalabashBrother" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CalabashBrother" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalabashBrother" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CalabashBrother" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalabashBrother" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CalabashBrother" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -393,7 +454,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545883317850" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546099904076" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -448,6 +509,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CalabashBrother" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="IOTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ShortestPathTest.testPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CalabashBrother" />
       <option name="PACKAGE_NAME" value="" />
@@ -463,10 +532,12 @@
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.ShortestPath" />
       <item itemvalue="JUnit.ShortestPathTest.testPath" />
+      <item itemvalue="JUnit.IOTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="JUnit.IOTest" />
         <item itemvalue="JUnit.ShortestPathTest.testPath" />
         <item itemvalue="Application.ShortestPath" />
         <item itemvalue="Application.Main" />
@@ -488,7 +559,7 @@
       <workItem from="1545831964104" duration="120000" />
       <workItem from="1545832329500" duration="675000" />
       <workItem from="1545833348548" duration="612000" />
-      <workItem from="1545834289820" duration="21132000" />
+      <workItem from="1545834289820" duration="74624000" />
     </task>
     <servers />
   </component>
@@ -496,9 +567,12 @@
     <history-entry file="ShortestPathTest_testPath - 2018.12.27 at 10h 46m 26s.xml">
       <configuration name="ShortestPathTest.testPath" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="IOTest - 2018.12.29 at 14h 18m 08s.xml">
+      <configuration name="IOTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26098000" />
+    <option name="totallyTimeSpent" value="79590000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -512,7 +586,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20171674" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2081545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -521,8 +595,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32961586" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.35811648" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.40024784" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39900866" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32961586" />
@@ -530,7 +604,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32961586" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50143063" side_tool="true" weight="0.3519207" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49928468" weight="0.03717472" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49928468" weight="0.23048328" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -549,35 +623,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/lib/tools.jar!/com/sun/tools/classfile/Dependency.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/cell/CalabashBrother.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/application/LauncherImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="388" selection-start-line="388" selection-end-line="388" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Camp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1695">
-          <caret line="148" column="6" selection-start-line="148" selection-start-column="6" selection-end-line="148" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Coordinate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -610,37 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/cell/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Formation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/cell/CellFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/cell/CellPoolConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://MAVEN/zikangzhou.calabashbrother:CalabashBrother:1.0.0">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -667,47 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Creature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2850">
-          <caret line="206" column="10" selection-start-line="206" selection-start-column="10" selection-end-line="206" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3384#3385#0" expanded="true" />
-            <element signature="e#3411#3412#0" expanded="true" />
-            <element signature="e#5296#5297#0" expanded="true" />
-            <element signature="e#5323#5324#0" expanded="true" />
-            <element signature="e#5397#5398#0" expanded="true" />
-            <element signature="e#5424#5425#0" expanded="true" />
-            <element signature="e#7049#7050#0" expanded="true" />
-            <element signature="e#7076#7077#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/CalabashBrother.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-429">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2412#2413#0" expanded="true" />
-            <element signature="e#2450#2451#0" expanded="true" />
-            <element signature="e#2510#2511#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#5535#5536#0" expanded="true" />
-            <element signature="e#5596#5597#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -720,63 +698,792 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/cell/CellPool.java">
+    <entry file="uml://JAVA/model.NonCalabashCamp">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>model.NonCalabashCamp</OriginalElement>
+          <nodes>
+            <node x="0.0" y="158.0">model.NonCalabashCamp</node>
+            <node x="32.0" y="0.0">model.Creature</node>
+            <node x="41.0" y="79.0">model.Camp</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="model.NonCalabashCamp" target="model.Camp">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="model.Camp" target="model.Creature">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-235.5" y="-44.5" />
+          <SelectedNodes>
+            <node>model.NonCalabashCamp</node>
+            <node>model.Creature</node>
+            <node>model.Camp</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/model.CampProperty">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>model.CampProperty</OriginalElement>
+          <nodes>
+            <node x="" y="">model.Creature</node>
+            <node x="" y="">model.CampProperty</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="68.0" y="54.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/model.Camp">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>model.Camp</OriginalElement>
+          <nodes>
+            <node x="" y="">model.Creature</node>
+            <node x="" y="">model.Camp</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="50.5" y="54.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/model.cell">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>model.cell</OriginalElement>
+          <nodes>
+            <node x="142.0" y="148.0">model.cell.Cell</node>
+            <node x="0.0" y="74.0">model.cell.CellFactory</node>
+            <node x="0.0" y="0.0">model.cell.CellPoolConfig</node>
+            <node x="0.0" y="148.0">model.cell.CellPool</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0259857177734375" x="-206.27597079076128" y="-45.52357262898022" />
+          <SelectedNodes>
+            <node>model.cell.Cell</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/model.CalabashCamp">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>model.CalabashCamp</OriginalElement>
+          <nodes>
+            <node x="19.0" y="0.0">model.Creature</node>
+            <node x="28.0" y="79.0">model.Camp</node>
+            <node x="0.0" y="158.0">model.CalabashCamp</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="model.CalabashCamp" target="model.Camp">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="model.Camp" target="model.Creature">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-248.5" y="-44.5" />
+          <SelectedNodes>
+            <node>model.CalabashCamp</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">com</node>
+            <node x="" y="">controller</node>
+            <node x="" y="">netscape</node>
+            <node x="" y="">junit</node>
+            <node x="" y="">oracle</node>
+            <node x="" y="">org</node>
+            <node x="" y="">resources</node>
+            <node x="" y="">main</node>
+            <node x="" y="">toolbarButtonGraphics</node>
+            <node x="" y="">sun</node>
+            <node x="" y="">META-INF</node>
+            <node x="" y="">jdk</node>
+            <node x="" y="">apple</node>
+            <node x="" y="">view</node>
+            <node x="" y="">groovyjarjarasm</node>
+            <node x="" y="">java</node>
+            <node x="" y="">groovy</node>
+            <node x="" y="">javax</node>
+            <node x="" y="">ShortestPathTest</node>
+            <node x="" y="">model</node>
+            <node x="" y="">groovyjarjarcommonscli</node>
+            <node x="" y="">javafx</node>
+            <node x="" y="">groovyjarjarantlr</node>
+            <node x="" y="">algorithm</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="288.5" y="310.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/algorithm">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>algorithm</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">algorithm.ShortestPath</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-253.5" y="-123.5" />
+          <SelectedNodes>
+            <node>algorithm.ShortestPath</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/controller">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>controller</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">controller.Controller</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-263.5" y="-123.5" />
+          <SelectedNodes>
+            <node>controller.Controller</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/controller.Controller">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>controller.Controller</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">controller.Controller</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.9476869111474265" x="-297.7194612737072" y="-130.89690906752892" />
+          <SelectedNodes>
+            <node>controller.Controller</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/view.View">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>view.View</OriginalElement>
+          <nodes>
+            <node x="" y="">view.View</node>
+            <node x="" y="">javafx.stage.Stage</node>
+            <node x="" y="">javafx.stage.Window</node>
+            <node x="" y="">javafx.event.EventTarget</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="78.0" y="133.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/view">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>view</OriginalElement>
+          <nodes>
+            <node x="" y="">view.View</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="55.0" y="14.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/model">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>model</OriginalElement>
+          <nodes>
+            <node x="543.7" y="158.0">model.NonCalabashCamp</node>
+            <node x="339.7" y="0.0">model.Creature</node>
+            <node x="603.5" y="79.0">model.Underlying</node>
+            <node x="0.0" y="311.0">model.CalabashProperty</node>
+            <node x="256.0" y="385.0">model.Rank</node>
+            <node x="500.5" y="79.0">model.Camp</node>
+            <node x="147.49999999999997" y="79.0">model.CampProperty</node>
+            <node x="23.5" y="79.0">model.Calabash</node>
+            <node x="384.7" y="158.0">model.CalabashCamp</node>
+            <node x="130.0" y="385.0">model.Color</node>
+            <node x="303.5" y="79.0">model.NonCalabashBrother</node>
+            <node x="202.0" y="232.0">model.Coordinate</node>
+            <node x="0.0" y="158.0">model.CalabashBrother</node>
+            <node x="28.0" y="232.0">model.Property</node>
+            <node x="518.0" y="232.0">model.cell</node>
+            <node x="363.0" y="232.0">model.Formation</node>
+            <node x="0.0" y="385.0">model.Model</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="model.NonCalabashCamp" target="model.Camp">
+              <point x="0.0" y="-14.5" />
+              <point x="626.2" y="133.0" />
+              <point x="562.75" y="133.0" />
+              <point x="20.75" y="14.5" />
+            </edge>
+            <edge source="model.NonCalabashBrother" target="model.Creature">
+              <point x="0.0" y="-14.5" />
+              <point x="392.0" y="59.0" />
+              <point x="390.2" y="59.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="model.CalabashProperty" target="model.Property">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="model.CampProperty" target="model.Creature">
+              <point x="0.0" y="-14.5" />
+              <point x="215.49999999999997" y="59.0" />
+              <point x="370.0" y="59.0" />
+              <point x="-20.19999999999999" y="14.5" />
+            </edge>
+            <edge source="model.CalabashCamp" target="model.Camp">
+              <point x="0.0" y="-14.5" />
+              <point x="454.2" y="133.0" />
+              <point x="521.25" y="133.0" />
+              <point x="-20.75" y="14.5" />
+            </edge>
+            <edge source="model.Calabash" target="model.Creature">
+              <point x="0.0" y="-14.5" />
+              <point x="75.5" y="49.0" />
+              <point x="349.8" y="49.0" />
+              <point x="-40.39999999999998" y="14.5" />
+            </edge>
+            <edge source="model.Camp" target="model.Creature">
+              <point x="0.0" y="-14.5" />
+              <point x="542.0" y="59.0" />
+              <point x="410.40000000000003" y="59.0" />
+              <point x="20.200000000000045" y="14.5" />
+            </edge>
+            <edge source="model.CalabashBrother" target="model.Calabash">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="model.Underlying" target="model.Creature">
+              <point x="0.0" y="-14.5" />
+              <point x="661.0" y="49.0" />
+              <point x="430.6" y="49.0" />
+              <point x="40.400000000000034" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0982072200322548" x="122.53799139378367" y="98.53799139378367" />
+          <SelectedNodes>
+            <node>model.cell</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/model.Creature">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>model.Creature</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">java.lang.FunctionalInterface</node>
+            <node x="32.5" y="158.0">model.Creature</node>
+            <node x="30.5" y="79.0">java.lang.Runnable</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="java.lang.Runnable" target="java.lang.FunctionalInterface">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="model.Creature" target="java.lang.Runnable">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-11.0" y="-44.5" />
+          <SelectedNodes>
+            <node>model.Creature</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/model.CalabashBrother">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>model.CalabashBrother</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">java.lang.FunctionalInterface</node>
+            <node x="241.75" y="237.0">java.lang.Enum</node>
+            <node x="32.5" y="158.0">model.Creature</node>
+            <node x="131.875" y="316.0">model.CalabashBrother</node>
+            <node x="153.5" y="158.0">java.lang.Comparable</node>
+            <node x="31.0" y="237.0">model.Calabash</node>
+            <node x="30.5" y="79.0">java.lang.Runnable</node>
+            <node x="294.5" y="158.0">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="java.lang.Runnable" target="java.lang.FunctionalInterface">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="model.CalabashBrother" target="java.lang.Enum">
+              <point x="37.75" y="-14.5" />
+              <point x="245.125" y="291.0" />
+              <point x="283.25" y="291.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="model.Creature" target="java.lang.Runnable">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="java.lang.Enum" target="java.io.Serializable">
+              <point x="20.75" y="-14.5" />
+              <point x="304.0" y="212.0" />
+              <point x="352.5" y="212.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="model.Calabash" target="model.Creature">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="model.CalabashBrother" target="model.Calabash">
+              <point x="-37.75" y="-14.5" />
+              <point x="169.625" y="291.0" />
+              <point x="83.0" y="291.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="java.lang.Enum" target="java.lang.Comparable">
+              <point x="-20.75" y="-14.5" />
+              <point x="262.5" y="212.0" />
+              <point x="214.0" y="212.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="220.0" y="34.5" />
+          <SelectedNodes>
+            <node>model.CalabashBrother</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/model.NonCalabashBrother">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>model.NonCalabashBrother</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">java.lang.FunctionalInterface</node>
+            <node x="241.25" y="158.0">java.lang.Enum</node>
+            <node x="32.5" y="158.0">model.Creature</node>
+            <node x="118.625" y="237.0">model.NonCalabashBrother</node>
+            <node x="291.5" y="79.0">java.lang.Comparable</node>
+            <node x="30.5" y="79.0">java.lang.Runnable</node>
+            <node x="155.5" y="79.0">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="model.NonCalabashBrother" target="model.Creature">
+              <point x="-44.25" y="-14.5" />
+              <point x="162.875" y="212.0" />
+              <point x="83.0" y="212.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="java.lang.Runnable" target="java.lang.FunctionalInterface">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="model.Creature" target="java.lang.Runnable">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="java.lang.Enum" target="java.io.Serializable">
+              <point x="-20.75" y="-14.5" />
+              <point x="262.0" y="133.0" />
+              <point x="213.5" y="133.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="model.NonCalabashBrother" target="java.lang.Enum">
+              <point x="44.25" y="-14.5" />
+              <point x="251.375" y="212.0" />
+              <point x="282.75" y="212.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="java.lang.Enum" target="java.lang.Comparable">
+              <point x="20.75" y="-14.5" />
+              <point x="303.5" y="133.0" />
+              <point x="352.0" y="133.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="112.5" y="-5.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/model.Property">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>model.Property</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">model.Property</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-43.5" y="-123.5" />
+          <SelectedNodes>
+            <node>model.Property</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/model.CalabashProperty">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>model.CalabashProperty</OriginalElement>
+          <nodes>
+            <node x="0.0" y="79.0">model.CalabashProperty</node>
+            <node x="28.0" y="0.0">model.Property</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="model.CalabashProperty" target="model.Property">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-15.5" y="-84.0" />
+          <SelectedNodes>
+            <node>model.CalabashProperty</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="36" />
+        <state relative-caret-position="355">
+          <caret line="66" column="41" lean-forward="true" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ShortestPathTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="135">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="285">
+          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#727#869#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/ShortestPath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="188">
+          <caret line="53" column="15" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/View.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/cell/CellFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="82" column="75" selection-start-line="82" selection-start-column="75" selection-end-line="82" selection-end-column="75" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/cell/CellPoolConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/cell/CellPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="71" column="14" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="623" selection-start-line="623" selection-end-line="623" />
+          <folding>
+            <element signature="e#25341#25342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Camp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="93" column="6" selection-start-line="93" selection-start-column="6" selection-end-line="93" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Formation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/cell/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Creature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1203">
+          <caret line="160" column="17" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2244#2245#0" expanded="true" />
+            <element signature="e#2285#2286#0" expanded="true" />
+            <element signature="e#2569#2570#0" expanded="true" />
+            <element signature="e#2606#2607#0" expanded="true" />
+            <element signature="class#Color#0" />
+            <element signature="class#Rank#0" />
+            <element signature="e#5898#5899#0" expanded="true" />
+            <element signature="e#5935#5936#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Coordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="e#2517#2518#0" expanded="true" />
+            <element signature="e#2580#2581#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/CalabashBrother.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+          <folding>
+            <element signature="e#4876#4877#0" expanded="true" />
+            <element signature="e#4913#4914#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="61" column="54" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
+        <state relative-caret-position="1736">
+          <caret line="147" column="28" selection-start-line="147" selection-start-column="28" selection-end-line="147" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/RecordReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="16" column="68" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/RecordWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/IOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="172" column="26" selection-start-line="172" selection-start-column="26" selection-end-line="172" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2760#2761#0" expanded="true" />
+            <element signature="e#2797#2798#0" expanded="true" />
+            <element signature="e#2861#2862#0" expanded="true" />
+            <element signature="e#2899#2900#0" expanded="true" />
+            <element signature="e#2959#2960#0" expanded="true" />
+            <element signature="e#3000#3001#0" expanded="true" />
+            <element signature="method#setCalabashLeader#0;class#Model#0" />
+            <element signature="e#3432#3433#0" expanded="true" />
+            <element signature="e#3472#3473#0" expanded="true" />
+            <element signature="e#3523#3524#0" expanded="true" />
+            <element signature="e#3555#3556#0" expanded="true" />
+            <element signature="method#setNonCalabashCamp#0;class#Model#0" />
+            <element signature="e#6597#6598#0" expanded="true" />
+            <element signature="e#6658#6659#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/record.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-62602">
+          <caret line="141" column="5" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
         </state>
       </provider>
     </entry>

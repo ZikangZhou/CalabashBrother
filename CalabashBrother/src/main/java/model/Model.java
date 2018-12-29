@@ -1,14 +1,19 @@
 package model;
 
+import io.RecordReader;
+
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Observable;
 import java.util.concurrent.TimeUnit;
 
-public class Model implements Runnable {
+public class Model extends Observable implements Runnable {
 
     public static Coordinate[][] coordinates;
     public static int row = 22;
     public static int col = 20;
+    public static boolean isReplay = false;
     private static CalabashBrother calabashLeader = CalabashBrother.RED;
     private static List<CalabashBrother> calabashSoldier = new ArrayList<>();
     private static NonCalabashBrother calabashSupporter = NonCalabashBrother.GRANDPA;
@@ -21,13 +26,30 @@ public class Model implements Runnable {
     private static NonCalabashCamp nonCalabashCamp;
     private static List<Creature> creatures = new ArrayList<>();
 
+    private BufferedReader reader;
+
     public Model() {
 
         coordinates = new Coordinate[row][col];
-        for (int i = 0; i < row; ++i)
+        for (int i = 0; i < row; ++i) {
             for (int j = 0; j < col; ++j) {
                 coordinates[i][j] = new Coordinate(i, j);
             }
+        }
+
+        try {
+            File file = new File("record.json");
+            if (!file.exists()) {
+                try {
+                    file.createNewFile();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            reader = new BufferedReader(new FileReader(file));
+        } catch(FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
         calabashSoldier.add(CalabashBrother.ORANGE);
         calabashSoldier.add(CalabashBrother.YELLOW);
@@ -38,7 +60,7 @@ public class Model implements Runnable {
 
 
         for (int i = 0; i < 6; ++i)
-            nonCalabashSoldier.add(new Underlying());
+            nonCalabashSoldier.add(new Underlying("小喽啰" + i));
 
         creatures.add(calabashLeader);
         creatures.addAll(calabashSoldier);
@@ -47,16 +69,6 @@ public class Model implements Runnable {
         creatures.addAll(nonCalabashSoldier);
         creatures.add(nonCalabashSupporter);
 
-        new Thread(calabashLeader).start();
-        for (Creature creature : calabashSoldier) {
-            new Thread(creature).start();
-        }
-        new Thread(calabashSupporter).start();
-        new Thread(nonCalabashLeader).start();
-        for (Creature creature : nonCalabashSoldier) {
-            new Thread(creature).start();
-        }
-        new Thread(nonCalabashSupporter).start();
     }
 
     public static Creature getCalabashLeader() {
@@ -144,6 +156,28 @@ public class Model implements Runnable {
                 nonCalabashFormation);
     }
 
+    public static boolean end() {
+        if (calabashLeader.getCell() != null)
+            return calabashLeader.getCell().getCoordinate().getCoordinateX() >= 20;
+        else
+            return false;
+    }
+
+    private void replay() {
+        RecordReader recordReader = new RecordReader();
+        try {
+            Property property = recordReader.readProperty(reader.readLine());
+            if (property != null) {
+                property.getCell().getCreature().setCell(property.getCell().getCoordinate());
+            } else {
+                setChanged();
+                notifyObservers();
+            }
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     private void update() {
         nonCalabashLeader.moveTowards(calabashLeader);
     }
@@ -153,7 +187,21 @@ public class Model implements Runnable {
         try {
             while (true) {
                 TimeUnit.MILLISECONDS.sleep(100);
-                update();
+                if (isReplay) {
+                    replay();
+                }else {
+                    update();
+                }
+                if (end()) {
+                    try {
+                        reader.close();
+                        reader = new BufferedReader(new FileReader(new File("record.json")));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    setChanged();
+                    notifyObservers();
+                }
             }
         } catch (InterruptedException e) {
             System.err.println("Interrupted");

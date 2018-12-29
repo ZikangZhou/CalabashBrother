@@ -42,6 +42,13 @@ public class CellPool extends GenericKeyedObjectPool<Coordinate, Cell> {
             }
         }
 
+        int flag = random.nextInt(2);
+        if (flag == 0 && coordinate2.getCoordinateX() + 1 < Model.row &&
+                isEmpty.get(Model.coordinates[coordinate2.getCoordinateX() + 1][coordinate2.getCoordinateY()])) {
+            isEmpty.remove(coordinate2);
+            isEmpty.put(coordinate2, false);
+        }
+
         for (int i = 0; i < Model.row; ++i) {
             for (int j = 0; j < Model.col; ++j) {
                 List<ShortestPath.Edge<Coordinate>> edges = new ArrayList<>();
@@ -62,7 +69,7 @@ public class CellPool extends GenericKeyedObjectPool<Coordinate, Cell> {
         }
         if (coordinate2.getCoordinateX() + 1 < Model.row &&
                 isEmpty.get(Model.coordinates[coordinate2.getCoordinateX() + 1][coordinate2.getCoordinateY()])) {
-            int flag = random.nextInt(2);
+            //int flag = random.nextInt(2);
             if (flag == 0)
                 return graph.getShortestPath(coordinate1,
                         Model.coordinates[coordinate2.getCoordinateX() + 1][coordinate2.getCoordinateY()]);

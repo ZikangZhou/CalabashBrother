@@ -1,5 +1,7 @@
 package controller;
 
+import io.RecordWriter;
+import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.control.Alert;
@@ -12,9 +14,11 @@ import model.Formation;
 import model.Model;
 import view.View;
 
+import java.util.Observable;
+import java.util.Observer;
 import java.util.Random;
 
-public class Controller {
+public class Controller implements Observer {
 
     public KeyEventHandler keyEventHandler;
     public MouseEventHandler mouseEventHandler;
@@ -26,13 +30,35 @@ public class Controller {
     public Controller(Model model, View view) {
         this.model = model;
         this.view = view;
+        model.addObserver(this);
         keyEventHandler = new KeyEventHandler();
         mouseEventHandler = new MouseEventHandler();
+
+    }
+
+    @Override
+    public void update(Observable o, Object arg) {
+        Platform.runLater(
+                () -> {
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setTitle(null);
+                    alert.setHeaderText(null);
+                    alert.setContentText("葫芦娃胜利!");
+                    alert.show();
+                    view.ballView.setVisible(false);
+                    view.vBox.setVisible(true);
+                }
+        );
+        model.clear();
+        Model.isReplay = false;
+        isSet = false;
     }
 
     public class KeyEventHandler implements EventHandler<KeyEvent> {
         @Override
         public void handle(KeyEvent event) {
+            if (Model.isReplay)
+                return;
             synchronized (Model.getCalabashLeader()) {
                 try {
                     switch (event.getCode()) {
@@ -53,17 +79,6 @@ public class Controller {
                             Model.getCalabashLeader().notify();
                             break;
                     }
-                    if (Model.getCalabashLeader().getCell().getCoordinate().getCoordinateX() >= 20) {
-                        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                        alert.setTitle(null);
-                        alert.setHeaderText(null);
-                        alert.setContentText("葫芦娃胜利!");
-                        alert.showAndWait();
-                        view.ballView.setVisible(false);
-                        view.vBox.setVisible(true);
-                        model.clear();
-                        isSet = false;
-                    }
                 } catch (Exception e) {
                 }
             }
@@ -74,6 +89,8 @@ public class Controller {
     public class MouseEventHandler implements EventHandler<MouseEvent> {
         @Override
         public void handle(MouseEvent event) {
+            if (Model.isReplay)
+                return;
             if (event.getSource() instanceof Button) {
                 String text = ((Button) event.getSource()).getText();
                 System.out.println(text);
@@ -119,16 +136,25 @@ public class Controller {
                         isSet = true;
                         break;
                     case "开始游戏":
+                        RecordWriter writer = new RecordWriter();
+                        writer.clear();
                         if (!isSet) {
                             model.clear();
                             model.setNonCalabashCamp(Formation.WING);
                             isSet = true;
                         }
-                        view.vBox.setVisible(false);
                         model.addCamp();
+                        for(Creature creature: Model.getCreatures())
+                            new Thread(creature).start();
+                        view.vBox.setVisible(false);
                         view.ballView.setX(Model.getCalabashLeader().getCell().getCoordinate().getCoordinateX() * View.scaleX - 10);
                         view.ballView.setY(Model.getCalabashLeader().getCell().getCoordinate().getCoordinateY() * View.scaleY - 10);
                         view.ballView.setVisible(true);
+                        break;
+                    case "精彩回放":
+                        model.clear();
+                        Model.isReplay = true;
+                        view.vBox.setVisible(false);
                         break;
                 }
             } else if (event.getSource() instanceof Canvas) {
@@ -136,7 +162,8 @@ public class Controller {
                     int sourceX = (int)(event.getX() / View.scaleX);
                     int sourceY = (int)(event.getY() / View.scaleY);
                     for (Creature creature : Model.getCreatures()) {
-                        if (creature instanceof CalabashBrother && !creature.equals(Model.getCalabashLeader())) {
+                        if (creature instanceof CalabashBrother && !creature.equals(Model.getCalabashLeader())
+                                && creature.getCell() != null) {
                             int destX = creature.getCell().getCoordinate().getCoordinateX();
                             int destY = creature.getCell().getCoordinate().getCoordinateY();
                             if (sourceX == destX && sourceY == destY) {
