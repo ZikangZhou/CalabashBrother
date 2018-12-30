@@ -69,7 +69,7 @@ View模块负责界面逻辑的搭建。View从Model中读取需要的数据（�
 
 Controller模块是Model与View之间的一座桥梁。
 
-![3](3.png)
+![3](/README/3.png)
 
 
 
