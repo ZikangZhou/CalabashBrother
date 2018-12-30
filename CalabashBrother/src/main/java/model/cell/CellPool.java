@@ -69,12 +69,8 @@ public class CellPool extends GenericKeyedObjectPool<Coordinate, Cell> {
         }
         if (coordinate2.getCoordinateX() + 1 < Model.row &&
                 isEmpty.get(Model.coordinates[coordinate2.getCoordinateX() + 1][coordinate2.getCoordinateY()])) {
-            //int flag = random.nextInt(2);
-            if (flag == 0)
                 return graph.getShortestPath(coordinate1,
                         Model.coordinates[coordinate2.getCoordinateX() + 1][coordinate2.getCoordinateY()]);
-            else
-                return graph.getShortestPath(coordinate1, coordinate2);
         } else {
             return graph.getShortestPath(coordinate1, coordinate2);
         }

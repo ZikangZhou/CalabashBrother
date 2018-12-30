@@ -16,8 +16,8 @@ public class RecordWriter {
         try {
             PrintWriter writer =
                     new PrintWriter(new BufferedWriter(new FileWriter(new File("record.json"), true)));
-            writer.write(propertyObject.toString());
-            writer.write("\n");
+            writer.println(propertyObject.toString());
+            //writer.write("\n");
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();

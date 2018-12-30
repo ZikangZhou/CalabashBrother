@@ -14,9 +14,7 @@ import model.Formation;
 import model.Model;
 import view.View;
 
-import java.util.Observable;
-import java.util.Observer;
-import java.util.Random;
+import java.util.*;
 
 public class Controller implements Observer {
 
@@ -24,6 +22,7 @@ public class Controller implements Observer {
     public MouseEventHandler mouseEventHandler;
     private Model model;
     private View view;
+    private List<Thread> creatureThreads = new ArrayList<>(Model.getCreatures().size());
     private boolean isSet = false;
     private Random random = new Random();
 
@@ -33,7 +32,11 @@ public class Controller implements Observer {
         model.addObserver(this);
         keyEventHandler = new KeyEventHandler();
         mouseEventHandler = new MouseEventHandler();
-
+        for(Creature creature : Model.getCreatures()) {
+            creatureThreads.add(new Thread(creature));
+        }
+        for (Thread thread : creatureThreads)
+            thread.start();
     }
 
     @Override
@@ -43,7 +46,10 @@ public class Controller implements Observer {
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
                     alert.setTitle(null);
                     alert.setHeaderText(null);
-                    alert.setContentText("葫芦娃胜利!");
+                    if (Model.isReplay)
+                        alert.setContentText("回放结束");
+                    else
+                        alert.setContentText("葫芦娃胜利!");
                     alert.show();
                     view.ballView.setVisible(false);
                     view.vBox.setVisible(true);
@@ -144,8 +150,6 @@ public class Controller implements Observer {
                             isSet = true;
                         }
                         model.addCamp();
-                        for(Creature creature: Model.getCreatures())
-                            new Thread(creature).start();
                         view.vBox.setVisible(false);
                         view.ballView.setX(Model.getCalabashLeader().getCell().getCoordinate().getCoordinateX() * View.scaleX - 10);
                         view.ballView.setY(Model.getCalabashLeader().getCell().getCoordinate().getCoordinateY() * View.scaleY - 10);
@@ -166,8 +170,8 @@ public class Controller implements Observer {
                                 && creature.getCell() != null) {
                             int destX = creature.getCell().getCoordinate().getCoordinateX();
                             int destY = creature.getCell().getCoordinate().getCoordinateY();
-                            if (sourceX == destX && sourceY == destY) {
-                                if (random.nextInt(8) != 5) {
+                            if (Math.abs(sourceX - destX) <= 2 && Math.abs(sourceY - destY) <= 2) {
+                                if (random.nextInt(20) != 10) {
                                     Model.getCalabashLeader().notify();
                                     model.setCalabashLeader((CalabashBrother) creature);
                                 }
@@ -176,10 +180,12 @@ public class Controller implements Observer {
                                     alert.setTitle(null);
                                     alert.setHeaderText(null);
                                     alert.setContentText("传球失败，老爷爷直接死掉！");
-                                    alert.showAndWait();
+                                    alert.show();
                                     view.ballView.setVisible(false);
                                     view.vBox.setVisible(true);
                                     model.clear();
+                                    for (Thread thread : creatureThreads)
+                                        thread.interrupt();
                                     isSet = false;
                                 }
                                 break;

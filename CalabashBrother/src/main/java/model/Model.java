@@ -166,7 +166,8 @@ public class Model extends Observable implements Runnable {
     private void replay() {
         RecordReader recordReader = new RecordReader();
         try {
-            Property property = recordReader.readProperty(reader.readLine());
+            String line = reader.readLine();
+            Property property = recordReader.readProperty(line);
             if (property != null) {
                 property.getCell().getCreature().setCell(property.getCell().getCoordinate());
             } else {

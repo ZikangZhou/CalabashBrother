@@ -13,8 +13,8 @@ enum NonCalabashBrother implements Creature {
         @Override
         public void run() {
             while (true) {
-                if (Model.isReplay || Model.end())
-                    return;
+                if (Thread.interrupted() || Model.isReplay || Model.end())
+                    continue;
                 boolean flag = random.nextBoolean();
                 try {
                     TimeUnit.MILLISECONDS.sleep(300);
@@ -34,8 +34,8 @@ enum NonCalabashBrother implements Creature {
         @Override
         public void run() {
             while (true) {
-                if (Model.isReplay || Model.end())
-                    return;
+                if (Thread.interrupted() || Model.isReplay || Model.end())
+                    continue;
                 try {
                     TimeUnit.MILLISECONDS.sleep(300);
                     moveTowards(GRANDPA);
@@ -50,8 +50,8 @@ enum NonCalabashBrother implements Creature {
         @Override
         public void run() {
             while (true) {
-                if (Model.isReplay || Model.end())
-                    return;
+                if (Thread.interrupted() || Model.isReplay || Model.end())
+                    continue;
                 synchronized (Model.getCalabashLeader()) {
                     try {
                         moveTowards(Model.getCalabashLeader());
@@ -255,8 +255,8 @@ class Underlying implements Creature {
     @Override
     public void run() {
         while (true) {
-            if (Model.isReplay)
-                return;
+            if (Thread.interrupted() || Model.isReplay || Model.end())
+                continue;
             try {
                 TimeUnit.MILLISECONDS.sleep(500);
                 int index = Model.getNonCalabashSoldier().indexOf(this);

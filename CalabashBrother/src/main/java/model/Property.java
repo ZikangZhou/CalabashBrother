@@ -41,7 +41,8 @@ public class Property {
         Cell oldCell = cell;
         try {
             cell = CellPool.getInstance().borrowObject(coordinate, 16);
-            writer.writeProperty(this);
+            if (!Model.isReplay)
+                writer.writeProperty(this);
             if (oldCell != null)
                 CellPool.getInstance().returnObject(oldCell.getCoordinate(), oldCell);
         } catch (Exception e) {

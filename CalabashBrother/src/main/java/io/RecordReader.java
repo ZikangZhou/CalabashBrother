@@ -10,7 +10,7 @@ import org.json.JSONObject;
 public class RecordReader {
 
    public Property readProperty(String json) {
-        if (json == null)
+       if (json == null || json.isEmpty())
             return null;
        JSONObject propertyObject = new JSONObject(json);
        String name = propertyObject.getString("name");
